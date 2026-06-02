@@ -1,0 +1,23 @@
+.toggle {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 60px;
+  height: 28px;
+  background-color: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.knob {
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}

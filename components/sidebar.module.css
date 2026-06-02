@@ -1,0 +1,84 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 175px;
+  height: 100vh;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: auto;
+}
+
+.navLink {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLink a {
+  display: block;
+  text-decoration: none;
+}
+
+.linkText {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  display: block;
+  line-height: 1.5;
+}
+
+.navLink.active .linkText {
+  color: var(--text-primary);
+}
+
+.underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  background-color: var(--accent);
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcon:hover {
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.copyright {
+  font-size: 11px;
+  color: var(--text-dim);
+}

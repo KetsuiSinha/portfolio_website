@@ -2,7 +2,6 @@
 
 import Sidebar from '@/components/Sidebar';
 import TopToggle from '@/components/TopToggle';
-import CustomCursor from '@/components/CustomCursor';
 import ProjectMedia from '@/components/ProjectMedia';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '@/data/projects';
@@ -72,7 +71,6 @@ export default function Works() {
     <div className={styles.page}>
       <Sidebar />
       <TopToggle />
-      <CustomCursor />
 
       <div id="works" className={styles.container}>
         {/* Left side - Image */}

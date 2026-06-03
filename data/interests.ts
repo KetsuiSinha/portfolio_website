@@ -17,7 +17,7 @@ export const interests: Interest[] = [
       'Building Docker images for portable and repeatable environments.',
       'Managing Proxmox containers for isolated infrastructure projects.',
     ],
-    image: '/hobbies/timeline-reference.png',
+    image: '/hobbies/Homelab.png',
     imageAlt: 'Home lab milestone placeholder image',
   },
   {
@@ -28,7 +28,7 @@ export const interests: Interest[] = [
       'Technical knowledge notes to retain and apply what I learn.',
       'Novels that improve perspective, creativity, and storytelling sense.',
     ],
-    image: '/placeholder-logo.svg',
+    image: '/hobbies/Reading.png',
     imageAlt: 'Reading milestone placeholder image',
   },
   {
@@ -40,7 +40,7 @@ export const interests: Interest[] = [
       'Build optimization and progression planning across long-form campaigns.',
       'Co-op and multiplayer sessions that improve decision speed and adaptability.',
     ],
-    image: '/placeholder.svg',
+    image: '/hobbies/Gaming.png',
     imageAlt: 'Gaming milestone placeholder image',
   },
   {
@@ -52,7 +52,7 @@ export const interests: Interest[] = [
       'Exploring direction styles, soundtrack design, and visual composition.',
       'Following seasonal releases while revisiting foundational classics.',
     ],
-    image: '/hobbies/timeline-reference.png',
+    image: '/hobbies/Anime.png',
     imageAlt: 'Anime milestone placeholder image',
   },
 ];

@@ -2,7 +2,6 @@
 
 import Sidebar from '@/components/Sidebar';
 import TopToggle from '@/components/TopToggle';
-import CustomCursor from '@/components/CustomCursor';
 import { motion } from 'framer-motion';
 import { skillsData } from '@/data/skills';
 import styles from './home.module.css';
@@ -32,7 +31,6 @@ export default function Home() {
     <div className={styles.page}>
       <Sidebar />
       <TopToggle />
-      <CustomCursor />
 
       {/* Hero Section */}
       <motion.section id="home" className={styles.hero} variants={containerVariants} initial="hidden" animate="visible">
@@ -66,7 +64,8 @@ export default function Home() {
             <p>
               I am a business-focused Full-Stack Developer with experience translating user requirements into scalable
               technical solutions. Skilled in requirement gathering, stakeholder communication, system design, and product
-              feature planning.
+              feature planning. I enjoy turning ambiguous problems into clear technical plans and shipping reliable
+              solutions that move the product forward.
             </p>
           </motion.div>
 
@@ -75,6 +74,7 @@ export default function Home() {
               My main focus is full-stack development, and I have worked on several projects including AI-powered
               applications, ERP systems, and real-time community platforms. I enjoy exploring new technologies and
               experimenting with creative ideas.
+              I also mentor others and document learnings to help build more predictable delivery processes.
             </p>
           </motion.div>
 
@@ -119,8 +119,7 @@ export default function Home() {
 
         <div className={`${styles.rightColumn} ${styles.motivationVisualColumn}`}>
           <motion.div variants={itemVariants} className={styles.motivationImage}>
-            <img src="/images/profile.jpg" alt="Profile placeholder" className={styles.profileImage} />
-            <div className={styles.imagePlaceholderLabel}>Your Photo Here</div>
+            <img src="/motivation_alongside.png" alt="Motivation visual" className={styles.profileImage} />
           </motion.div>
         </div>
       </motion.section>

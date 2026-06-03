@@ -18,6 +18,8 @@
   --accent: #ffffff;
   --cursor-color: #ffffff;
   --cursor-filter: invert(1);
+  --skill-bg: transparent;
+  --skill-text: #ddd;
 }
 
 .light {
@@ -32,6 +34,8 @@
   --accent: #111111;
   --cursor-color: #000000;
   --cursor-filter: none;
+  --skill-bg: #000000;
+  --skill-text: #ffffff;
 }
 
 html.custom-cursor-enabled,
@@ -92,11 +96,11 @@ hr {
 .skill-pill {
   display: inline-block;
   border: 1px solid var(--pill-border);
-  border-radius: 999px;
-  padding: 5px 15px;
+  border-radius: 0;
+  padding: 10px 18px;
   font-size: 13px;
-  color: #ddd;
-  background: transparent;
+  color: var(--skill-text);
+  background: var(--skill-bg);
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease;

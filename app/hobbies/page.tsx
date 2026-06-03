@@ -2,7 +2,6 @@
 
 import Sidebar from '@/components/Sidebar';
 import TopToggle from '@/components/TopToggle';
-import CustomCursor from '@/components/CustomCursor';
 import { motion } from 'framer-motion';
 import { interests } from '@/data/interests';
 import styles from './hobbies.module.css';
@@ -32,7 +31,6 @@ export default function HobbiesPage() {
     <div className={styles.page}>
       <Sidebar />
       <TopToggle />
-      <CustomCursor />
 
       <motion.div id="hobbies" className={styles.container} variants={containerVariants} initial="hidden" animate="visible">
         <motion.div variants={itemVariants} className={styles.header}>

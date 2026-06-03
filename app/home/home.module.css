@@ -74,12 +74,15 @@
 }
 
 .motivationImage {
-  width: 100%;
-  aspect-ratio: 4 / 5;
+  width: 420px;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
   border: 1px solid var(--border);
   display: grid;
   place-items: center;
   position: relative;
+  background: #ffffff;
+  margin-left: auto;
 }
 
 .profileImage {

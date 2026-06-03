@@ -1,7 +1,6 @@
 'use client';
 
 import Sidebar from '@/components/Sidebar';
-import TopToggle from '@/components/TopToggle';
 import ProjectMedia from '@/components/ProjectMedia';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '@/data/projects';
@@ -70,7 +69,7 @@ export default function Works() {
   return (
     <div className={styles.page}>
       <Sidebar />
-      <TopToggle />
+
 
       <div id="works" className={styles.container}>
         {/* Left side - Image */}

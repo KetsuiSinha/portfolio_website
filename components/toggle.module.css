@@ -21,3 +21,73 @@
   border-radius: 50%;
   transition: all 0.3s ease;
 }
+
+/* Radix Switch styles */
+.radixSwitch {
+  all: unset;
+  width: 56px;
+  height: 28px;
+  background: var(--switch-track, rgba(100,100,100,0.12));
+  border-radius: 999px;
+  padding: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.radixThumb {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: var(--switch-thumb, #fff);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.25);
+  transition: transform 300ms cubic-bezier(.2,.9,.2,1), background 200ms;
+  transform: translateX(0px);
+}
+
+.radixSwitch[data-state="checked"] {
+  background: var(--switch-track-checked, #222);
+}
+
+.radixSwitch[data-state="checked"] .radixThumb {
+  transform: translateX(28px);
+  background: var(--switch-thumb-checked, #fff);
+}
+
+/* shadcn-style switch classes (used by components/ui/switch.tsx) */
+.shadcnSwitch {
+  all: unset;
+  width: 56px;
+  height: 28px;
+  background: var(--switch-track, rgba(100,100,100,0.12));
+  border-radius: 999px;
+  padding: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.shadcnThumb {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: var(--switch-thumb, #fff);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.25);
+  transition: transform 300ms cubic-bezier(.2,.9,.2,1), background 200ms;
+  transform: translateX(0px);
+}
+
+.shadcnSwitch[data-state="checked"] {
+  background: var(--switch-track-checked, #222);
+}
+
+.shadcnSwitch[data-state="checked"] .shadcnThumb {
+  transform: translateX(28px);
+  background: var(--switch-thumb-checked, #fff);
+}

@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   const socialIcons = [
     { name: 'LinkedIn', href: 'https://linkedin.com/in/nishchay-sinha', icon: 'linkedin' },
-    { name: 'GitHub', href: 'https://github.com/nishchayk', icon: 'github' },
+    { name: 'GitHub', href: 'https://github.com/KetsuiSinha', icon: 'github' },
     { name: 'Email', href: 'mailto:nishchaykksinha@gmail.com', icon: 'email' },
   ];
 

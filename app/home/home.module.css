@@ -149,7 +149,7 @@
   .hero,
   .section,
   .skillsSection {
-    padding: 80px 20px 60px 200px;
+    padding: 80px 20px 60px 20px;
   }
 
   .heroName {

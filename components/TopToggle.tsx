@@ -1,39 +1,25 @@
-'use client';
+"use client"
 
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
-import styles from './toggle.module.css';
+import { useEffect, useState } from 'react'
+import { useTheme } from 'next-themes'
+import Switch from './ui/switch'
+import styles from './toggle.module.css'
 
 const TopToggle = () => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const isDark = theme !== 'light';
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  useEffect(() => setMounted(true), [])
+  if (!mounted) return null
 
-  const handleToggle = () => {
-    setTheme(isDark ? 'light' : 'dark');
-  };
+  const isDark = theme === 'dark'
+  const handleChange = () => setTheme(isDark ? 'light' : 'dark')
 
   return (
-    <motion.div
-      className={styles.toggle}
-      onClick={handleToggle}
-      whileHover={{ cursor: 'pointer' }}
-      role="button"
-      aria-label="Toggle theme"
-      aria-pressed={!isDark}
-    >
-      <motion.div
-        className={styles.knob}
-        animate={{ x: mounted && !isDark ? 32 : 2 }}
-        transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-      />
-    </motion.div>
-  );
-};
+    <div className={styles.toggle} role="presentation">
+      <Switch checked={isDark} onCheckedChange={handleChange} aria-label="Toggle theme" />
+    </div>
+  )
+}
 
-export default TopToggle;
+export default TopToggle

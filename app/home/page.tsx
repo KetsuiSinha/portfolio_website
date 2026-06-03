@@ -1,7 +1,6 @@
 'use client';
 
 import Sidebar from '@/components/Sidebar';
-import TopToggle from '@/components/TopToggle';
 import { motion } from 'framer-motion';
 import { skillsData } from '@/data/skills';
 import styles from './home.module.css';
@@ -30,7 +29,6 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Sidebar />
-      <TopToggle />
 
       {/* Hero Section */}
       <motion.section id="home" className={styles.hero} variants={containerVariants} initial="hidden" animate="visible">

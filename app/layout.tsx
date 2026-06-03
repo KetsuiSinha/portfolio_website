@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
-import { ThemeProvider } from '@/components/theme-provider'
+// Force dark theme by default; remove runtime theme switching
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -24,10 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="portfolio-theme">
-          {children}
-        </ThemeProvider>
+      <body className="dark">
+        {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

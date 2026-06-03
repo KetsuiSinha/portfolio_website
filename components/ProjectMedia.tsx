@@ -31,18 +31,25 @@ const ProjectMedia = ({ type, src, alt = 'Project media' }: ProjectMediaProps) =
   if (type === 'video') {
     return (
       <video
-        className="cursor-hover-target"
+        className="cursor-hover-target project-media-video"
         src={src}
         autoPlay
         muted
         loop
         playsInline
-        style={{ width: '100%', height: '100%', objectFit: 'cover', border: '1px solid var(--border)' }}
+        style={{ width: '100%', height: '100%', objectFit: 'contain', border: '1px solid var(--border)', background: 'var(--card)' }}
       />
-    );
+    )
   }
 
-  return <img className="cursor-hover-target" src={src} alt={alt} style={{ width: '100%', height: '100%', objectFit: 'cover', border: '1px solid var(--border)' }} />;
+  return (
+    <img
+      className="cursor-hover-target project-media-img"
+      src={src}
+      alt={alt}
+      style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', border: '1px solid var(--border)', display: 'block', margin: '0 auto', background: 'var(--card)' }}
+    />
+  )
 };
 
 export default ProjectMedia;
